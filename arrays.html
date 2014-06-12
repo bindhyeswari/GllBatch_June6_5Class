@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="data.js"></script>
+    <script>
+        console.log(data);
+        var filtered = data.restaurants.filter(function (elem){
+            return elem.area === "Cabo San Lucas";
+        }).map(function (elem){
+            return {
+                name: elem.name,
+                address: elem.address
+            };
+        });
+        console.log(filtered);
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
